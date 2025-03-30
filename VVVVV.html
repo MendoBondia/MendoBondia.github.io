@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title >Joan Mendo - Game Developer Portfolio</title>
+  <link rel="stylesheet" href="projectPage.css">
+</head>
+<body>
+  <nav class="navigation">
+    <ul class="nav-left">
+      <li><a href="https://mendobondia.github.io/#home">Inicio</a></li>
+      <li><a href="https://mendobondia.github.io/#projects">Proyectos</a></li>
+      <li><a href="https://mendobondia.github.io/#about-me">Sobre mí</a></li>
+      <li><a href="archivosPDF/JoanMendoCV.pdf" download="JoanMendoCV.pdf">Descargar CV</a></li>
+    </ul>
+    
+    <div class="nav-right">
+      <a href="mailto:joanmendo05@gmail.com">
+        <img src="imagenes/avd5c445f01ca4712be88.png" alt="Email">
+      </a>
+      <a href="https://github.com/Granrey499" target="_blank">
+        <img src="imagenes/iconoGithub.png" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/joan-mendo-david-34b427296/" target="_blank">
+        <img src="imagenes/iconoLinkedIn.png" alt="LinkedIn">
+      </a>
+    </div>
+  </nav>
+
+
+<div class="container">
+
+  <h2 class = "backButton"><a href ="https://mendobondia.github.io/">&#8592 Volver</a></h2>
+  <div class="carousel">
+
+    <img src="imagenes/finalVVVVV.PNG" alt="Imagen del juego sin">
+  </div>
+  
+  <!-- Dual Text Blocks -->
+  <div class="dual-blocks">
+    <div class="text-block">
+      <h2>Resumen</h2>
+      <p>El primer proyecto que realize en Unity, un remake del videojuego VVVVV, que normalmente se usa como iniciacion en el ámbito del game development</p>
+      <p>Este proyecto fue individual, y realmente el objetivo principal y en lo que más me centre fue en aprender todas las bases que me han servido hasta ahora.
+      </p>
+    </div>
+    
+    <div class="text-block">
+      <h2>Tecnologías Usadas</h2>
+      <ul>
+        <li><a>Unity (URP)</a></li>
+        <li><a>Aseprite</a></li>
+        <li><a>GitHub</a></li>
+        <li><a>C#</a></li>
+        <li><a>ProofHub</a></li>
+      </ul>
+    </div>
+</div>
+  
+<!-- Full Width Text -->
+<div class="full-width-text">
+    <h2>Aprendizajes</h2>
+    <p>
+        En este proyecto, que fue el primero que hice, me centré en hacerlo eficiente, probando las diferentes herramientas que Unity proporciona, tanto a nivel 
+        de componentes en los GameObjects, como a nivel de código en C#, las extensiones y addons más utilizados, etc.
+    </p>
+    <p>
+        La semana inicial estuve haciendo lo básico: el movimiento del personaje, el seguimiento de la cámara, los enemigos, muerte por el entorno, todos los elementos
+        principales a nivel de jugabilidad. Una de las principales mecánicas del VVVVVV es que tienes la capacidad de cambiar la gravedad, de manera que tu personaje pasa a 
+        caminar boca abajo por el techo, y es la mecánica principal con la que superas los diferentes niveles. La siguiente meta a cumplir fue el <b>Cambio de escenas</b>.
+    </p>
+    <p>
+        Primeramente, al poder entrar a cada nivel desde diferentes posiciones a raíz del cambio de gravedad, fue algo que tuve que tener en cuenta. Otro tema importante fue
+        el de cargar escenas de manera <b>asíncrona</b>, de manera que había un momento de transición donde dos escenas estaban cargadas a la vez en el mismo espacio para 
+        que no se notase el cambio entre las dos.
+    </p>
+    <p>
+        Otro aspecto importante que aprendí fue la importancia de la IA de los enemigos, donde añadir un factor de aleatoriedad para hacer que sus movimientos no 
+        sean tan predecibles por parte del jugador es necesario. Esto lo apliqué también a una de las salas donde hay trampas en las paredes que lanzan proyectiles,
+        y vi que si no haces que el intervalo entre flecha y flecha varíe un poco, pasar dos veces por ese nivel se vuelve monótono y aburrido.
+    </p>
+    
+   
+</div>
+
+</body>
+</html>

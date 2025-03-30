@@ -31,27 +31,26 @@ header h1 {
 /* NAVIGATION */
 .navigation {
   display: flex;
-  flex-direction: column;
   align-items: center;
   background-color: #050505;
   padding: 15px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
   gap: 15px;
 }
 
 /* NAV-RIGHT (ICONOS DE CONTACTO) */
 .nav-right {
+  margin-left: auto;
   display: flex;
+  width:fit-content;
+  justify-content: right;
   align-items: center;
   gap: 15px;
-  padding-right: 0;
+  padding-right: 10px;
 }
 
 .nav-right a img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   transition: transform 0.2s ease;
   background-color: white;
   border-radius: 100%;
@@ -65,23 +64,22 @@ header h1 {
 
 /* NAV-LEFT (ENLACES DEL MENÚ) */
 .nav-left {
+  width:fit-content;
   list-style: none;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   padding: 0;
   margin: 0;
 }
 
-.nav-left li {
-  display: inline;
-}
+
 
 .nav-left a {
   text-decoration: none;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.6em;
   padding: 8px 12px;
   transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 5px;
@@ -92,6 +90,7 @@ header h1 {
   color: black;
   box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.8);
 }
+
 
 /* Carousel Section */
 
@@ -132,6 +131,8 @@ header h1 {
   position: relative;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  
 }
 
 .carousel img {
@@ -139,7 +140,8 @@ header h1 {
   display: block;
   object-fit: cover;
   height: auto;
-  max-height: 600px;
+  max-height: 700px;
+  aspect-ratio: 9/16;
 }
 
 /* Dual Text Blocks Section */
@@ -228,101 +230,10 @@ header h1 {
 }
 
 .full-width-text p {
-
+  font-size: 1.2em;
   line-height: 1.5;
   margin-bottom: 20px;
   text-align: left;
   color: #ffffffd0;
 }
 
-/* Media Queries para pantallas más grandes */
-@media (min-width: 768px) {
-  .navigation {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 15px 40px;
-  }
-  
-  .nav-right {
-    gap: 25px;
-    padding-right: 3%;
-  }
-  
-  .nav-right a img {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .nav-left {
-    gap: 20px;
-  }
-  
-  .nav-left a {
-    font-size: 1.5em;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    width: 80%;
-  }
-  
-  header h1 {
-    font-size: 3em;
-  }
-  
-  .nav-right a img {
-    width: 70px;
-    height: 70px;
-  }
-  
-  .nav-left a {
-    font-size: 1.8em;
-  }
-  
-  .text-block h2 {
-    font-size: 2.2em;
-  }
-  
-  .text-block p {
-    font-size: 1.2em;
-  }
-  
-  .full-width-text h2 {
-    font-size: 2.5em;
-  }
-  
-  .full-width-text p {
-    font-size: 1.3em;
-  }
-}
-
-/* Ajustes para muy pequeñas pantallas */
-@media (max-width: 480px) {
-  .nav-right a img {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .nav-left a {
-    font-size: 1em;
-    padding: 5px 8px;
-  }
-  
-  .text-block {
-    min-width: 100%;
-  }
-  
-  .text-block h2 {
-    font-size: 1.8em;
-  }
-  
-  .text-block p,
-  .full-width-text p {
-    font-size: 1em;
-  }
-  
-  .full-width-text h2 {
-    font-size: 2em;
-  }
-}
