@@ -1,5 +1,4 @@
 import { Decal, useTexture } from "@react-three/drei";
-import { CanvasProvider } from "../components/CanvasProvider";
 import { ThreeElements } from "@react-three/fiber";
 
 type IconProps = {

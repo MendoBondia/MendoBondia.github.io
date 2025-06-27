@@ -2,11 +2,6 @@ import { Text, Cloud, Clouds, OrthographicCamera } from "@react-three/drei";
 
 import Icon from "../componentParts/Icon.tsx";
 import { Canvas } from "@react-three/fiber";
-import {
-  MeshBasicMaterial,
-  MeshStandardMaterial,
-  MeshToonMaterial,
-} from "three";
 
 export default function StartPage3D() {
   return (

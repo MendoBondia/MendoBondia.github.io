@@ -1,5 +1,5 @@
 import { createContext, use, type ReactNode } from "react";
-import { BrowserRouter, HashRouter, StaticRouter } from "react-router";
+import { HashRouter, StaticRouter } from "react-router";
 
 const IsNested = createContext(false);
 
