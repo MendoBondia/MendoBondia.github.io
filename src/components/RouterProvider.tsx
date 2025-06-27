@@ -1,5 +1,5 @@
 import { createContext, use, type ReactNode } from "react";
-import { BrowserRouter, StaticRouter } from "react-router";
+import { BrowserRouter, HashRouter, StaticRouter } from "react-router";
 
 const IsNested = createContext(false);
 
@@ -15,9 +15,9 @@ export function Router({
   const isNestedRouter = use(IsNested);
   if (!isNestedRouter && type === "browser") {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <IsNested value>{children}</IsNested>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 
